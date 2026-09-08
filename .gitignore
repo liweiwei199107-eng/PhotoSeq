@@ -1,0 +1,49 @@
+# Raw sequencing and alignment files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+
+# Downloaded references and generated indices
+01_raw_data_processing/reference/
+01_raw_data_processing/software/
+01_raw_data_processing/raw_fastq/
+01_raw_data_processing/inFiles/
+01_raw_data_processing/outFiles/
+01_raw_data_processing/outFilesR2/
+01_raw_data_processing/outFilesS/
+01_raw_data_processing/outFilesT/
+01_raw_data_processing/ET/
+01_raw_data_processing/S/
+01_raw_data_processing/T/
+
+# Downstream generated data and results
+02_downstream_analysis/00_prepared_data/
+02_downstream_analysis/01_DEGs_Spatial/
+02_downstream_analysis/02_Venn_Spatial/
+02_downstream_analysis/03_Immune_Spatial/
+02_downstream_analysis/04_Estimate_Spatial/
+02_downstream_analysis/05_Enrich_Spatial/
+02_downstream_analysis/06_GSVA_Spatial/
+02_downstream_analysis/07_WGCNA_Spatial/
+02_downstream_analysis/08_DEGs_Temporal/
+02_downstream_analysis/09_Venn_Temporal/
+02_downstream_analysis/10_Enrich_Temporal/
+02_downstream_analysis/11_GSVA_Temporal/
+02_downstream_analysis/12_Venn_All/
+02_downstream_analysis/13_WGCNA_All/
+02_downstream_analysis/14_GSVA_All/
+02_downstream_analysis/15_Immune_Temporal/
+02_downstream_analysis/16_Integrated_Pathway_Analysis/
+02_downstream_analysis/17_Quality_Control/
+02_downstream_analysis/validation/
+
+# R and operating-system files
+.Rhistory
+.RData
+.Rproj.user/
+Thumbs.db
+.DS_Store
