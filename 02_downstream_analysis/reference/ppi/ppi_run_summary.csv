@@ -1,0 +1,9 @@
+metric,value
+query_source,frozen publication snapshot
+input_genes,50
+string_mapping_rows,44
+unmatched_input_genes,6
+network_nodes_with_edge,14
+retained_edges_score_gt_0.4,16
+isolated_input_genes,36
+mcode_modules,1

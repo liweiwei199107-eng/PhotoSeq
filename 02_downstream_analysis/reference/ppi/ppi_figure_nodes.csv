@@ -1,0 +1,49 @@
+panel,gene,x,y,highlighted
+PPI network,Atp8a1,-0.42,0.48,FALSE
+PPI network,B2m,-0.23,0.51,FALSE
+PPI network,Pygm,0.22,0.51,FALSE
+PPI network,Cmya5,0.42,0.46,FALSE
+PPI network,Actg1,0,0.2,TRUE
+PPI network,Itga3,0.23,0.18,TRUE
+PPI network,Lama4,-0.19,-0.01,TRUE
+PPI network,Itga8,-0.02,-0.17,TRUE
+PPI network,Itga9,0.21,-0.08,TRUE
+PPI network,Ctdspl,0.43,0.03,FALSE
+PPI network,Rpl10,-0.39,-0.29,FALSE
+PPI network,Mrpl50,-0.24,-0.45,FALSE
+PPI network,Dpysl3,0.05,-0.46,FALSE
+PPI network,Cfl1,0.41,-0.31,FALSE
+MCC,Atp8a1,-0.42,0.48,FALSE
+MCC,B2m,-0.23,0.51,FALSE
+MCC,Actg1,0,0.2,TRUE
+MCC,Itga3,0.23,0.18,TRUE
+MCC,Lama4,-0.19,-0.01,TRUE
+MCC,Itga8,-0.02,-0.17,TRUE
+MCC,Itga9,0.21,-0.08,TRUE
+MCC,Rpl10,-0.39,-0.29,FALSE
+MCC,Dpysl3,0.05,-0.46,FALSE
+MCC,Cfl1,0.41,-0.31,FALSE
+Degree,Atp8a1,-0.42,0.48,FALSE
+Degree,B2m,-0.23,0.51,FALSE
+Degree,Actg1,0,0.2,TRUE
+Degree,Itga3,0.23,0.18,TRUE
+Degree,Lama4,-0.19,-0.01,TRUE
+Degree,Itga8,-0.02,-0.17,TRUE
+Degree,Itga9,0.21,-0.08,TRUE
+Degree,Rpl10,-0.39,-0.29,FALSE
+Degree,Dpysl3,0.05,-0.46,FALSE
+Degree,Cfl1,0.41,-0.31,FALSE
+MCODE,Atp8a1,-0.42,0.48,FALSE
+MCODE,B2m,-0.23,0.51,FALSE
+MCODE,Pygm,0.22,0.51,FALSE
+MCODE,Cmya5,0.42,0.46,FALSE
+MCODE,Actg1,0,0.2,TRUE
+MCODE,Itga3,0.23,0.18,TRUE
+MCODE,Lama4,-0.19,-0.01,TRUE
+MCODE,Itga8,-0.02,-0.17,TRUE
+MCODE,Itga9,0.21,-0.08,TRUE
+MCODE,Ctdspl,0.43,0.03,FALSE
+MCODE,Rpl10,-0.39,-0.29,FALSE
+MCODE,Mrpl50,-0.24,-0.45,FALSE
+MCODE,Dpysl3,0.05,-0.46,FALSE
+MCODE,Cfl1,0.41,-0.31,FALSE

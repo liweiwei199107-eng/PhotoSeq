@@ -1,0 +1,5 @@
+panel,highlighted,gray_nodes
+PPI network,Actg1;Itga9;Itga8;Itga3;Lama4,Atp8a1;B2m;Cfl1;Cmya5;Ctdspl;Dpysl3;Mrpl50;Pygm;Rpl10
+MCC,Itga9;Itga3;Itga8;Actg1;Lama4,Rpl10;Cfl1;Atp8a1;B2m;Dpysl3
+Degree,Actg1;Itga9;Itga3;Itga8;Lama4,Rpl10;Cfl1;Atp8a1;B2m;Dpysl3
+MCODE,Actg1;Itga9;Itga3;Itga8;Lama4,Atp8a1;B2m;Cfl1;Cmya5;Ctdspl;Dpysl3;Mrpl50;Pygm;Rpl10

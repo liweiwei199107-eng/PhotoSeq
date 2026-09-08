@@ -1,0 +1,7 @@
+dataset,contrast,n_tested,n_deg,n_up,n_down
+spatial,Tumor_vs_Adjacent,23548,2112,1034,1078
+spatial,LungMetastasis_vs_Tumor,23548,3876,2105,1771
+temporal,Mid_vs_Early,22086,3067,1389,1678
+temporal,Late_vs_Mid,22086,2287,1280,1007
+temporal,LungMetastasis_vs_Late,22086,2724,1555,1169
+combined,FIVE_WAY_INTERSECTION,NA,50,NA,NA

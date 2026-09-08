@@ -1,0 +1,819 @@
+Metagene	Cell type
+Adrm1	Activated CD8 T cell
+Adrm1b	Activated CD8 T cell
+Ahsa1	Activated CD8 T cell
+C1galt1c1	Activated CD8 T cell
+Cct6b	Activated CD8 T cell
+Cd37	Activated CD8 T cell
+Cd3d	Activated CD8 T cell
+Cd3e	Activated CD8 T cell
+Cd3g	Activated CD8 T cell
+Cd69	Activated CD8 T cell
+Cd8a	Activated CD8 T cell
+Cetn3	Activated CD8 T cell
+Cse1l	Activated CD8 T cell
+Gemin6	Activated CD8 T cell
+Gpt2	Activated CD8 T cell
+Gzma	Activated CD8 T cell
+Gzme	Activated CD8 T cell
+Gzmg	Activated CD8 T cell
+Gzmd	Activated CD8 T cell
+Gzmf	Activated CD8 T cell
+Gzmn	Activated CD8 T cell
+Gzmk	Activated CD8 T cell
+Il2rb	Activated CD8 T cell
+Lck	Activated CD8 T cell
+Mpzl1	Activated CD8 T cell
+Nkg7	Activated CD8 T cell
+Pik3ip1	Activated CD8 T cell
+Ptrh2	Activated CD8 T cell
+Timm13	Activated CD8 T cell
+Zap70	Activated CD8 T cell
+Actn4	Central memory CD8 T cell
+Adam12	Central memory CD8 T cell
+Adcy9	Central memory CD8 T cell
+F13a1	Central memory CD8 T cell
+Fcer1g	Central memory CD8 T cell
+Fcgr4	Central memory CD8 T cell
+Fgf7	Central memory CD8 T cell
+Fkbp4	Central memory CD8 T cell
+Glud1	Central memory CD8 T cell
+Gm2a	Central memory CD8 T cell
+Gusb	Central memory CD8 T cell
+Il1rn	Central memory CD8 T cell
+Nol11	Central memory CD8 T cell
+Ntrk1	Central memory CD8 T cell
+Rara	Central memory CD8 T cell
+Rnf128	Central memory CD8 T cell
+Siglec1	Central memory CD8 T cell
+Siglecl2	Central memory CD8 T cell
+Tnfrsf11a	Central memory CD8 T cell
+Tox4	Central memory CD8 T cell
+Uba52	Central memory CD8 T cell
+Ulbp1	Central memory CD8 T cell
+Acap1	Effector memeory CD8 T cell
+Apol7b	Effector memeory CD8 T cell
+Apol8	Effector memeory CD8 T cell
+Arhgap10	Effector memeory CD8 T cell
+Atp10d	Effector memeory CD8 T cell
+C3ar1	Effector memeory CD8 T cell
+Ccr5	Effector memeory CD8 T cell
+Cd160	Effector memeory CD8 T cell
+Cd55b	Effector memeory CD8 T cell
+Cd55	Effector memeory CD8 T cell
+Cflar	Effector memeory CD8 T cell
+Cmklr1	Effector memeory CD8 T cell
+Dapp1	Effector memeory CD8 T cell
+Fcrl6	Effector memeory CD8 T cell
+Flt3l	Effector memeory CD8 T cell
+Gzmm	Effector memeory CD8 T cell
+Hapln3	Effector memeory CD8 T cell
+H2-DMb1	Effector memeory CD8 T cell
+H2-DMb2	Effector memeory CD8 T cell
+Ifi202b	Effector memeory CD8 T cell
+Ifi207	Effector memeory CD8 T cell
+Mndal	Effector memeory CD8 T cell
+Lime1	Effector memeory CD8 T cell
+Ltk	Effector memeory CD8 T cell
+Nfkbia	Effector memeory CD8 T cell
+Setd7	Effector memeory CD8 T cell
+Sik1	Effector memeory CD8 T cell
+Trib2	Effector memeory CD8 T cell
+Aim2	Activated CD4 T cell
+Birc3	Activated CD4 T cell
+Brip1	Activated CD4 T cell
+Ccl20	Activated CD4 T cell
+Ccl4	Activated CD4 T cell
+Ccl5	Activated CD4 T cell
+Ccnb1	Activated CD4 T cell
+Ccr7	Activated CD4 T cell
+Dusp2	Activated CD4 T cell
+Esco2	Activated CD4 T cell
+Ets1	Activated CD4 T cell
+Exo1	Activated CD4 T cell
+Exoc6	Activated CD4 T cell
+Itk	Activated CD4 T cell
+Kif11	Activated CD4 T cell
+Kntc1	Activated CD4 T cell
+Nuf2	Activated CD4 T cell
+Prc1	Activated CD4 T cell
+Psat1	Activated CD4 T cell
+Rgs1	Activated CD4 T cell
+Rtkn2	Activated CD4 T cell
+Samsn1	Activated CD4 T cell
+Sell	Activated CD4 T cell
+Trat1	Activated CD4 T cell
+Abhd3	Central memory CD4 T cell
+Ahnak	Central memory CD4 T cell
+Anxa2	Central memory CD4 T cell
+Aqp3	Central memory CD4 T cell
+Bmi1	Central memory CD4 T cell
+Bzw2	Central memory CD4 T cell
+Cd63	Central memory CD4 T cell
+Col4a1	Central memory CD4 T cell
+Cyld	Central memory CD4 T cell
+Elmo2	Central memory CD4 T cell
+Fyn	Central memory CD4 T cell
+Glipr1	Central memory CD4 T cell
+Gss	Central memory CD4 T cell
+Ifitm2	Central memory CD4 T cell
+Itgb1	Central memory CD4 T cell
+Itgb2	Central memory CD4 T cell
+Itgb2l	Central memory CD4 T cell
+Klf5	Central memory CD4 T cell
+Lsp1	Central memory CD4 T cell
+Ndufb9	Central memory CD4 T cell
+Sfxn3	Central memory CD4 T cell
+Sirpb1c	Central memory CD4 T cell
+Sirpb1b	Central memory CD4 T cell
+Sirpb1a	Central memory CD4 T cell
+Smad4	Central memory CD4 T cell
+Stx4a	Central memory CD4 T cell
+Tradd	Central memory CD4 T cell
+Vim	Central memory CD4 T cell
+Xrcc6	Central memory CD4 T cell
+Atm	Effector memeory CD4 T cell
+Casp3	Effector memeory CD4 T cell
+Casq1	Effector memeory CD4 T cell
+Cd300e	Effector memeory CD4 T cell
+Dock9	Effector memeory CD4 T cell
+Exosc9	Effector memeory CD4 T cell
+Ezh2	Effector memeory CD4 T cell
+Gde1	Effector memeory CD4 T cell
+Il34	Effector memeory CD4 T cell
+Ncoa4	Effector memeory CD4 T cell
+Nefl	Effector memeory CD4 T cell
+Pdgfrl	Effector memeory CD4 T cell
+Ptgs1	Effector memeory CD4 T cell
+Reps1	Effector memeory CD4 T cell
+Scg2	Effector memeory CD4 T cell
+Siglecf	Effector memeory CD4 T cell
+Cd33	Effector memeory CD4 T cell
+Tal1	Effector memeory CD4 T cell
+Tfec	Effector memeory CD4 T cell
+Tipin	Effector memeory CD4 T cell
+Tpk1	Effector memeory CD4 T cell
+Uqcrb	Effector memeory CD4 T cell
+Usp9y	Effector memeory CD4 T cell
+Wipf1	Effector memeory CD4 T cell
+Zcrb1	Effector memeory CD4 T cell
+B3gat1	T follicular helper cell
+Cdk5r1	T follicular helper cell
+Pdcd1	T follicular helper cell
+Bcl6	T follicular helper cell
+Cd200	T follicular helper cell
+Cd83	T follicular helper cell
+Cd84	T follicular helper cell
+Fgf2	T follicular helper cell
+Gpr18	T follicular helper cell
+Cebpa	T follicular helper cell
+Clec10a	T follicular helper cell
+Mgl2	T follicular helper cell
+Clec4a1	T follicular helper cell
+Clec4a4	T follicular helper cell
+Clec4a3	T follicular helper cell
+Clec4a2	T follicular helper cell
+Csf1r	T follicular helper cell
+Ctss	T follicular helper cell
+Dpp4	T follicular helper cell
+Lrrc32	T follicular helper cell
+Mc5r	T follicular helper cell
+Mill1	T follicular helper cell
+Mill2	T follicular helper cell
+Ncam1	T follicular helper cell
+Nrp1	T follicular helper cell
+Pdcd1lg2	T follicular helper cell
+Pdcd6	T follicular helper cell
+Prdx1	T follicular helper cell
+Rae1	T follicular helper cell
+Raet1a	T follicular helper cell
+Raet1e	T follicular helper cell
+Raet1c	T follicular helper cell
+Raet1d	T follicular helper cell
+H60b	T follicular helper cell
+Raet1b	T follicular helper cell
+Siglece	T follicular helper cell
+Tyro3	T follicular helper cell
+Chst12	T follicular helper cell
+Clic3	T follicular helper cell
+Ivns1abp	T follicular helper cell
+Kir3dl1	T follicular helper cell
+Kir3dl2	T follicular helper cell
+Lgmn	T follicular helper cell
+Acp5	Gamma delta T cell
+Aqp9	Gamma delta T cell
+BC028528	Gamma delta T cell
+Ccl3	Gamma delta T cell
+Cd209e	Gamma delta T cell
+Cd209a	Gamma delta T cell
+Cd209d	Gamma delta T cell
+Cd209c	Gamma delta T cell
+Cd209b	Gamma delta T cell
+Cd33	Gamma delta T cell
+Siglech	Gamma delta T cell
+Cd36	Gamma delta T cell
+Cdk5	Gamma delta T cell
+Il10rb	Gamma delta T cell
+Lgals1	Gamma delta T cell
+Mapk7	Gamma delta T cell
+Klhl7	Gamma delta T cell
+Krt80	Gamma delta T cell
+Lamc1	Gamma delta T cell
+Lcorl	Gamma delta T cell
+Lmnb1	Gamma delta T cell
+Meis3	Gamma delta T cell
+Mpl	Gamma delta T cell
+Fabp1	Gamma delta T cell
+Fabp5	Gamma delta T cell
+Fadd	Gamma delta T cell
+Mfap3l	Gamma delta T cell
+Minpp1	Gamma delta T cell
+Rps24	Gamma delta T cell
+Rps7	Gamma delta T cell
+Rps9	Gamma delta T cell
+Dbnl	Gamma delta T cell
+Ccl11	Gamma delta T cell
+Cd70	Type 1 T helper cell
+Tbx21	Type 1 T helper cell
+Adam8	Type 1 T helper cell
+Ahcyl2	Type 1 T helper cell
+Alcam	Type 1 T helper cell
+B3galnt1	Type 1 T helper cell
+Bbs12	Type 1 T helper cell
+Bst1	Type 1 T helper cell
+Cd151	Type 1 T helper cell
+Cd47	Type 1 T helper cell
+Cd48	Type 1 T helper cell
+Cd52	Type 1 T helper cell
+Cd53	Type 1 T helper cell
+Cd59b	Type 1 T helper cell
+Cd59a	Type 1 T helper cell
+Cd6	Type 1 T helper cell
+Cd68	Type 1 T helper cell
+Cd7	Type 1 T helper cell
+Cd96	Type 1 T helper cell
+Cfhr2	Type 1 T helper cell
+Chrm3	Type 1 T helper cell
+Clec7a	Type 1 T helper cell
+Col23a1	Type 1 T helper cell
+Col4a4	Type 1 T helper cell
+Col5a3	Type 1 T helper cell
+Dab1	Type 1 T helper cell
+Dleu7	Type 1 T helper cell
+Doc2b	Type 1 T helper cell
+Emp1	Type 1 T helper cell
+F12	Type 1 T helper cell
+Furin	Type 1 T helper cell
+Gab3	Type 1 T helper cell
+Gatm	Type 1 T helper cell
+Gfpt2	Type 1 T helper cell
+Gpr25	Type 1 T helper cell
+Grem2	Type 1 T helper cell
+Havcr1	Type 1 T helper cell
+Timd5	Type 1 T helper cell
+Timd6	Type 1 T helper cell
+Timd2	Type 1 T helper cell
+Hsd11b1	Type 1 T helper cell
+Hunk	Type 1 T helper cell
+Igf2	Type 1 T helper cell
+Rcsd1	Type 1 T helper cell
+Ryr1	Type 1 T helper cell
+Sav1	Type 1 T helper cell
+Sele	Type 1 T helper cell
+Selp	Type 1 T helper cell
+Sh3kbp1	Type 1 T helper cell
+Sit1	Type 1 T helper cell
+Slc35b3	Type 1 T helper cell
+Siglecg	Type 1 T helper cell
+Skap1	Type 1 T helper cell
+Thumpd2	Type 1 T helper cell
+Tigit	Type 1 T helper cell
+Zeb2	Type 1 T helper cell
+Enc1	Type 1 T helper cell
+Fbxo30	Type 1 T helper cell
+Fcgr2b	Type 1 T helper cell
+Stac	Type 1 T helper cell
+Ltc4s	Type 1 T helper cell
+Man1b1	Type 1 T helper cell
+Mdh1	Type 1 T helper cell
+Mmd	Type 1 T helper cell
+Rgs16	Type 1 T helper cell
+Il12a	Type 1 T helper cell
+P2rx5	Type 1 T helper cell
+Itgb4	Type 1 T helper cell
+Metrnl	Type 1 T helper cell
+Tnfrsf1a	Type 1 T helper cell
+Irf1	Type 1 T helper cell
+Htr2b	Type 1 T helper cell
+Cald1	Type 1 T helper cell
+Mocos	Type 1 T helper cell
+Traf3ip2	Type 1 T helper cell
+Tlr8	Type 1 T helper cell
+Traf1	Type 1 T helper cell
+Dusp14	Type 1 T helper cell
+Il17a	Type 17 T helper cell
+Il17ra	Type 17 T helper cell
+C2cd4a	Type 17 T helper cell
+C2cd4b	Type 17 T helper cell
+Ca2	Type 17 T helper cell
+Psg22	Type 17 T helper cell
+Psg18	Type 17 T helper cell
+Psg29	Type 17 T helper cell
+Il17c	Type 17 T helper cell
+Il17f	Type 17 T helper cell
+Il17rc	Type 17 T helper cell
+Il17re	Type 17 T helper cell
+Il23a	Type 17 T helper cell
+Ildr1	Type 17 T helper cell
+Lonrf3	Type 17 T helper cell
+Sh2d6	Type 17 T helper cell
+Tnip2	Type 17 T helper cell
+Abca1	Type 17 T helper cell
+Abcb1a	Type 17 T helper cell
+Abcb1b	Type 17 T helper cell
+Adamts12	Type 17 T helper cell
+Ank1	Type 17 T helper cell
+Ankrd22	Type 17 T helper cell
+B3galt2	Type 17 T helper cell
+Camta1	Type 17 T helper cell
+Ccr9	Type 17 T helper cell
+Cd40	Type 17 T helper cell
+Ift80	Type 17 T helper cell
+Asb2	Type 2 T helper cell
+Csrp2	Type 2 T helper cell
+Dapk1	Type 2 T helper cell
+Dlc1	Type 2 T helper cell
+Dnajc12	Type 2 T helper cell
+Dusp6	Type 2 T helper cell
+Gnai1	Type 2 T helper cell
+Lamp3	Type 2 T helper cell
+Nrp2	Type 2 T helper cell
+Osbpl1a	Type 2 T helper cell
+Pde4b	Type 2 T helper cell
+Phlda1	Type 2 T helper cell
+Pla2g4a	Type 2 T helper cell
+Rab27b	Type 2 T helper cell
+Rbms3	Type 2 T helper cell
+Rnf125	Type 2 T helper cell
+Tmprss3	Type 2 T helper cell
+Gata3	Type 2 T helper cell
+Birc5	Type 2 T helper cell
+Cdc25c	Type 2 T helper cell
+Cdc7	Type 2 T helper cell
+Cenpf	Type 2 T helper cell
+Cxcr6	Type 2 T helper cell
+Dhfr	Type 2 T helper cell
+Evi5	Type 2 T helper cell
+Hells	Type 2 T helper cell
+Lair1	Type 2 T helper cell
+Ccl3	Regulatory T cell
+Cd72	Regulatory T cell
+Clec5a	Regulatory T cell
+Foxp3	Regulatory T cell
+Itga4	Regulatory T cell
+L1cam	Regulatory T cell
+Lipa	Regulatory T cell
+Lrp1	Regulatory T cell
+Lrrc42	Regulatory T cell
+Marco	Regulatory T cell
+Mmp12	Regulatory T cell
+Ifi205	Regulatory T cell
+Ifi204	Regulatory T cell
+Ifi211	Regulatory T cell
+Mrc1	Regulatory T cell
+Ms4a6d	Regulatory T cell
+Ms4a6c	Regulatory T cell
+Ms4a6b	Regulatory T cell
+Pelo	Regulatory T cell
+Plek	Regulatory T cell
+Prss23	Regulatory T cell
+Ptgir	Regulatory T cell
+St8sia4	Regulatory T cell
+Stab1	Regulatory T cell
+Adam28	Activated B cell
+Cd180	Activated B cell
+Cd79b	Activated B cell
+Blk	Activated B cell
+Cd19	Activated B cell
+Ms4a1	Activated B cell
+Tnfrsf17	Activated B cell
+Ighm	Activated B cell
+Gng7	Activated B cell
+Mical3	Activated B cell
+Spib	Activated B cell
+H2-Ob	Activated B cell
+Igkc	Activated B cell
+Pnoc	Activated B cell
+Fcrl1	Activated B cell
+Bach2	Activated B cell
+Cr2	Activated B cell
+Tcl1	Activated B cell
+Akna	Activated B cell
+Arhgap25	Activated B cell
+Ccl21e	Activated B cell
+Ccl21b	Activated B cell
+Ccl21d	Activated B cell
+Ccl21f	Activated B cell
+Ccl21a	Activated B cell
+Cd27	Activated B cell
+Cd38	Activated B cell
+Clec9a	Activated B cell
+Cd22	Immature  B cell
+Cybb	Immature  B cell
+Fcrl1	Immature  B cell
+Fcrl5	Immature  B cell
+Fcrla	Immature  B cell
+Hdac9	Immature  B cell
+H2-Aa	Immature  B cell
+Hvcn1	Immature  B cell
+Ncf1	Immature  B cell
+P2ry10	Immature  B cell
+Sp100	Immature  B cell
+Csprs	Immature  B cell
+Txnip	Immature  B cell
+Stap1	Immature  B cell
+Tagap	Immature  B cell
+Tagap1	Immature  B cell
+Zcchc2	Immature  B cell
+Aicda	Memory B cell
+Ccna2	Memory B cell
+Cdkn3	Memory B cell
+Clcn5	Memory B cell
+Enpp1	Memory B cell
+Fcer1a	Memory B cell
+Myc	Memory B cell
+Runx2	Memory B cell
+Sorl1	Memory B cell
+Sox5	Memory B cell
+Stat5a	Memory B cell
+Stat5b	Memory B cell
+Tlr9	Memory B cell
+Akt3	Natural killer cell
+Axl	Natural killer cell
+Bst2	Natural killer cell
+Cdh2	Natural killer cell
+Crtam	Natural killer cell
+Csf2ra	Natural killer cell
+Ctsz	Natural killer cell
+Cxcl1	Natural killer cell
+Cxcl3	Natural killer cell
+Cxcl2	Natural killer cell
+Cyth1	Natural killer cell
+Daxx	Natural killer cell
+Dgkh	Natural killer cell
+Dll4	Natural killer cell
+Dpyd	Natural killer cell
+Erbb3	Natural killer cell
+F11r	Natural killer cell
+Fasl	Natural killer cell
+Fcgr1	Natural killer cell
+Fn1	Natural killer cell
+Fstl1	Natural killer cell
+Fuca1	Natural killer cell
+Gbp2	Natural killer cell
+Gbp2b	Natural killer cell
+Gls2	Natural killer cell
+Grb2	Natural killer cell
+Lst1	Natural killer cell
+Bcl2	Natural killer cell
+Cdc5l	Natural killer cell
+Cdc5lrt7	Natural killer cell
+Cdc5lrt6	Natural killer cell
+Cdc5lrt10	Natural killer cell
+Cdc5lrt5	Natural killer cell
+Cdc5lrt9	Natural killer cell
+Cdc5lrt1	Natural killer cell
+Cdc5lrt8	Natural killer cell
+Cdc5lrt4	Natural killer cell
+Fgf18	Natural killer cell
+Fzr1	Natural killer cell
+Igfbp5	Natural killer cell
+Kank2	Natural killer cell
+Ldb3	Natural killer cell
+Abat	CD56bright natural killer cell
+9530068E07Rik	CD56bright natural killer cell
+Cdhr1	CD56bright natural killer cell
+Dcaf12	CD56bright natural killer cell
+Dynll1	CD56bright natural killer cell
+Gpr137b	CD56bright natural killer cell
+Krt87	CD56bright natural killer cell
+Krt86	CD56bright natural killer cell
+Mlst8	CD56bright natural killer cell
+Elmod3	CD56bright natural killer cell
+Entpd5	CD56bright natural killer cell
+Cox7a2l	CD56bright natural killer cell
+Creb3l4	CD56bright natural killer cell
+Csf1	CD56bright natural killer cell
+Csnk2a2	CD56bright natural killer cell
+Stfa2	CD56bright natural killer cell
+Csta2	CD56bright natural killer cell
+Csta1	CD56bright natural killer cell
+Stfa1	CD56bright natural killer cell
+Stfa3	CD56bright natural killer cell
+Cstdc4	CD56bright natural killer cell
+Cstdc5	CD56bright natural killer cell
+Cstdc6	CD56bright natural killer cell
+Csta3	CD56bright natural killer cell
+Stfa2l1	CD56bright natural killer cell
+Cstdc3	CD56bright natural killer cell
+Cstb	CD56bright natural killer cell
+Ctsd	CD56bright natural killer cell
+Fst	CD56bright natural killer cell
+Gata2	CD56bright natural killer cell
+Gmpr	CD56bright natural killer cell
+Hdc	CD56bright natural killer cell
+Hey1	CD56bright natural killer cell
+Hoxa1	CD56bright natural killer cell
+Hs2st1	CD56bright natural killer cell
+Hs3st1	CD56bright natural killer cell
+Bcl11b	CD56bright natural killer cell
+Cdh3	CD56bright natural killer cell
+Myl6b	CD56bright natural killer cell
+Naa16	CD56bright natural killer cell
+Cyp27b1	CD56bright natural killer cell
+Eif3m	CD56bright natural killer cell
+Cyp27a1	CD56dim natural killer cell
+Ddx55	CD56dim natural killer cell
+Dyrk2	CD56dim natural killer cell
+Rpl37a	CD56dim natural killer cell
+Notch3	CD56dim natural killer cell
+Akr7a5	CD56dim natural killer cell
+Gprc5c	CD56dim natural killer cell
+Grin1	CD56dim natural killer cell
+H2-Q6	CD56dim natural killer cell
+H2-Q10	CD56dim natural killer cell
+H2-D1	CD56dim natural killer cell
+H2-Q2	CD56dim natural killer cell
+H2-Q8	CD56dim natural killer cell
+H2-Q4	CD56dim natural killer cell
+H2-T23	CD56dim natural killer cell
+H2-K1	CD56dim natural killer cell
+H2-Q1	CD56dim natural killer cell
+H2-Q7	CD56dim natural killer cell
+Porcn	CD56dim natural killer cell
+Psmc4	CD56dim natural killer cell
+Upp1	CD56dim natural killer cell
+Il21r	CD56dim natural killer cell
+Kir3dl1	CD56dim natural killer cell
+Kir3dl2	CD56dim natural killer cell
+Ccr2	Myeloid derived suppressor cell
+Cd14	Myeloid derived suppressor cell
+Cd2	Myeloid derived suppressor cell
+Cd86	Myeloid derived suppressor cell
+Cxcr4	Myeloid derived suppressor cell
+Fcgr2b	Myeloid derived suppressor cell
+Fcgr3	Myeloid derived suppressor cell
+Fcgr4	Myeloid derived suppressor cell
+Fermt3	Myeloid derived suppressor cell
+Gpsm3	Myeloid derived suppressor cell
+Il18bp	Myeloid derived suppressor cell
+Il4ra	Myeloid derived suppressor cell
+Itgal	Myeloid derived suppressor cell
+Itgam	Myeloid derived suppressor cell
+Parvg	Myeloid derived suppressor cell
+Psap	Myeloid derived suppressor cell
+Ptger2	Myeloid derived suppressor cell
+Ptges2	Myeloid derived suppressor cell
+S100a8	Myeloid derived suppressor cell
+S100a9	Myeloid derived suppressor cell
+Gm5849	Myeloid derived suppressor cell
+Btn2a2	Natural killer T cell
+Cd101	Natural killer T cell
+Cd109	Natural killer T cell
+Cnpy3	Natural killer T cell
+Cnpy4	Natural killer T cell
+Creb1	Natural killer T cell
+Crtc2	Natural killer T cell
+Crtc3	Natural killer T cell
+Csf2	Natural killer T cell
+Klrc1	Natural killer T cell
+Fut4	Natural killer T cell
+Icam2	Natural killer T cell
+Lamp2	Natural killer T cell
+Pirb	Natural killer T cell
+Klrg1	Natural killer T cell
+Hspa4	Natural killer T cell
+Hspb6	Natural killer T cell
+Ism2	Natural killer T cell
+Itih2	Natural killer T cell
+Kdm4c	Natural killer T cell
+Kir3dl1	Natural killer T cell
+Kir3dl2	Natural killer T cell
+Kirrel3	Natural killer T cell
+Sdcbp	Natural killer T cell
+Nfatc2ip	Natural killer T cell
+Mill1	Natural killer T cell
+Mill2	Natural killer T cell
+Ncr1	Natural killer T cell
+Fosl1	Natural killer T cell
+Tslp	Natural killer T cell
+Slc7a7	Natural killer T cell
+Spp1	Natural killer T cell
+Trem2	Natural killer T cell
+Ubash3a	Natural killer T cell
+Ybx2	Natural killer T cell
+Ccdc88a	Natural killer T cell
+Clec1a	Natural killer T cell
+Thbd	Natural killer T cell
+Pdpn	Natural killer T cell
+Vcam1	Natural killer T cell
+Abcd1	Activated dendritic cell
+C1qc	Activated dendritic cell
+Capg	Activated dendritic cell
+Ccl3	Activated dendritic cell
+Cd207	Activated dendritic cell
+Cd302	Activated dendritic cell
+Atp6v1a	Activated dendritic cell
+Bcl2l1	Activated dendritic cell
+C1qb	Activated dendritic cell
+Snrpn	Activated dendritic cell
+Snurf	Activated dendritic cell
+Spcs3	Activated dendritic cell
+Ccna1	Activated dendritic cell
+Nos2	Activated dendritic cell
+Sra1	Activated dendritic cell
+Trem1	Activated dendritic cell
+Treml1	Activated dendritic cell
+Rhoa	Activated dendritic cell
+Slc25a37	Activated dendritic cell
+Tnfsf14	Activated dendritic cell
+Treml4	Activated dendritic cell
+Xpo6	Activated dendritic cell
+Clec4b2	Activated dendritic cell
+Clec4b1	Activated dendritic cell
+Tnfaip2	Activated dendritic cell
+Ubd	Activated dendritic cell
+Actr3	Activated dendritic cell
+Rab1a	Activated dendritic cell
+Sla	Activated dendritic cell
+H2-Aa	Activated dendritic cell
+Siglecf	Activated dendritic cell
+Slamf9	Activated dendritic cell
+Cbx6	Plasmacytoid dendritic cell
+Dab2	Plasmacytoid dendritic cell
+Ddx17	Plasmacytoid dendritic cell
+Higd1a	Plasmacytoid dendritic cell
+Idh3a	Plasmacytoid dendritic cell
+Il3ra	Plasmacytoid dendritic cell
+Maged1	Plasmacytoid dendritic cell
+Nucb2	Plasmacytoid dendritic cell
+Ofd1	Plasmacytoid dendritic cell
+Ogt	Plasmacytoid dendritic cell
+Pdia4	Plasmacytoid dendritic cell
+Sertad2	Plasmacytoid dendritic cell
+Sirpa	Plasmacytoid dendritic cell
+Tmed2	Plasmacytoid dendritic cell
+Eng	Plasmacytoid dendritic cell
+Igf1	Plasmacytoid dendritic cell
+Itga2b	Plasmacytoid dendritic cell
+Gabarap	Plasmacytoid dendritic cell
+Gpx1	Plasmacytoid dendritic cell
+Krt23	Plasmacytoid dendritic cell
+Prok2	Plasmacytoid dendritic cell
+Ralb	Plasmacytoid dendritic cell
+Retnla	Plasmacytoid dendritic cell
+Retnlb	Plasmacytoid dendritic cell
+Retnlg	Plasmacytoid dendritic cell
+Rnf141	Plasmacytoid dendritic cell
+Sec14l1	Plasmacytoid dendritic cell
+Emp3	Plasmacytoid dendritic cell
+Cd300lf	Plasmacytoid dendritic cell
+Abtb1	Plasmacytoid dendritic cell
+Klhl21	Plasmacytoid dendritic cell
+Phrf1	Plasmacytoid dendritic cell
+Acadm	Immature dendritic cell
+Ahcyl1	Immature dendritic cell
+Aldh1a2	Immature dendritic cell
+Aldh3a2	Immature dendritic cell
+Aldh9a1	Immature dendritic cell
+Alox15	Immature dendritic cell
+Amt	Immature dendritic cell
+Arl1	Immature dendritic cell
+Atic	Immature dendritic cell
+Capza1	Immature dendritic cell
+Lilra5	Immature dendritic cell
+Rdx	Immature dendritic cell
+Rragd	Immature dendritic cell
+Tacstd2	Immature dendritic cell
+Inpp5f	Immature dendritic cell
+Rab38	Immature dendritic cell
+Plau	Immature dendritic cell
+Csf3r	Immature dendritic cell
+Slc18a2	Immature dendritic cell
+Ampd2	Immature dendritic cell
+Cltb	Immature dendritic cell
+I830077J02Rik	Immature dendritic cell
+Aif1	Macrophage
+Ccl1	Macrophage
+Ccl6	Macrophage
+Ccl9	Macrophage
+Ccl26	Macrophage
+Cd300lb	Macrophage
+Cnr1	Macrophage
+Cnr2	Macrophage
+Eif1	Macrophage
+Eif4a1	Macrophage
+Fpr1	Macrophage
+Fpr2	Macrophage
+Fpr3	Macrophage
+Frat2	Macrophage
+Gpr27	Macrophage
+Ear3	Macrophage
+Ear6	Macrophage
+Rnase2b	Macrophage
+Ear1	Macrophage
+Ear10	Macrophage
+Ear14	Macrophage
+Ear2	Macrophage
+Ear4	Macrophage
+Rnase2a	Macrophage
+Ms4a2	Macrophage
+Basp1	Macrophage
+Igsf6	Macrophage
+Hk3	Macrophage
+Vnn1	Macrophage
+Fes	Macrophage
+Npl	Macrophage
+Fzd2	Macrophage
+Hnmt	Macrophage
+Slc15a3	Macrophage
+Cd4	Macrophage
+Frmd4a	Macrophage
+Crybb1	Macrophage
+Hrh1	Macrophage
+Wnt5b	Macrophage
+Gipr	Eosinophil
+Fosb	Eosinophil
+Rrp12	Eosinophil
+Gpr183	Eosinophil
+Nr4a3	Eosinophil
+St3gal6	Eosinophil
+Depdc5	Eosinophil
+Pde6c	Eosinophil
+Pkd2l2	Eosinophil
+Gpr65	Eosinophil
+Il5ra	Eosinophil
+P2ry14	Eosinophil
+Dach1	Eosinophil
+Dapk2	Eosinophil
+Adamts3	Mast cell
+Cpa3	Mast cell
+Cma1	Mast cell
+Ctsg	Mast cell
+Arhgap15	Mast cell
+Cpm	Mast cell
+Fcna	Mast cell
+Fcnb	Mast cell
+Ftl2-ps	Mast cell
+Ftl1	Mast cell
+Itga9	Mast cell
+Ear3	Mast cell
+Ear6	Mast cell
+Rnase2b	Mast cell
+Ear1	Mast cell
+Ear10	Mast cell
+Ear14	Mast cell
+Ear2	Mast cell
+Ear4	Mast cell
+Rnase2a	Mast cell
+S100a4	Mast cell
+Siglece	Mast cell
+Slc6a4	Mast cell
+Ptgs2	Mast cell
+Egr3	Mast cell
+Pilra	Mast cell
+Pilrb1	Mast cell
+Asgr2	Monocyte
+Cfp	Monocyte
+Asgr1	Monocyte
+Cd1d2	Monocyte
+Cd1d1	Monocyte
+Upk3a	Monocyte
+Actg1	Monocyte
+Anxa5	Monocyte
+Atp6v1b2	Monocyte
+Cfl1	Monocyte
+Dazap2	Monocyte
+Ctbs	Monocyte
+Hivep2	Monocyte
+Marcksl1	Monocyte
+Mbp	Monocyte
+Mmp15	Monocyte
+Pnpla6	Monocyte
+Tmbim6	Monocyte
+Pqbp1	Monocyte
+Tex264	Monocyte
+Ikzf1	Monocyte
+Creb5	Neutrophil
+Cda	Neutrophil
+Chst15	Neutrophil
+Casp4	Neutrophil
+Mmp25	Neutrophil
+Hal	Neutrophil
+Ffar2	Neutrophil
+Mak	Neutrophil
+Cxcr1	Neutrophil
+Steap4	Neutrophil
+Mgam	Neutrophil
+Cxcr2	Neutrophil
+Tnfrsf10b	Neutrophil

@@ -1,0 +1,17 @@
+gene_a,gene_b,combined_score
+Lama4,Itga9,0.8
+Lama4,Itga8,0.809
+Lama4,Itga3,0.814
+Itga8,Actg1,0.665
+Itga8,Itga3,0.721
+Itga8,Itga9,0.792
+Atp8a1,B2m,0.74
+Itga9,Ctdspl,0.401
+Itga9,Itga3,0.613
+Itga9,Actg1,0.665
+Pygm,Cmya5,0.541
+Mrpl50,Rpl10,0.422
+Actg1,Rpl10,0.452
+Actg1,Itga3,0.666
+Actg1,Dpysl3,0.738
+Actg1,Cfl1,0.989
