@@ -6,7 +6,7 @@ PhotoSeq stands for **Photo-directed in situ Barcoding and Spatial Transcriptome
 
 ## 1. Reference data
 
-PhotoSeq mouse reads were aligned to the GRCm39 genome using GENCODE mouse release M37. The original chromosome identifiers in the downloaded reference files are retained. No `chr` to `mchr` renaming is performed or required by these scripts.
+PhotoSeq mouse reads were aligned to the GRCm39 genome using GENCODE mouse release M37.
 
 ```bash
 mkdir -p reference/gencode_M37
