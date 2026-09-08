@@ -152,8 +152,8 @@ The count-generation inputs are grouped as follows:
 | Directory | Analysis | Deduplicated BAM files |
 | --- | --- | --- |
 | `outFilesR2/` | Technical replicates | `EL1rm`, `E1Trm` |
-| `outFilesS/` | Spatial | `TAN1rm`–`TAN3rm`, `MAN1rm`–`MAN3rm` |
-| `outFilesT/` | Temporal | `EL1rm`–`EL3rm`, `TAN1rm`–`TAN3rm`, `MAN1rm`–`MAN3rm` |
+| `outFilesS/` | Spatial | `TAN1rm`, `TAN2rm`, `TAN3rm`, `MAN1rm`, `MAN2rm`, `MAN3rm` |
+| `outFilesT/` | Temporal | `EL1rm`, `EL2rm`, `EL3rm`, `TAN1rm`, `TAN2rm`, `TAN3rm`, `MAN1rm`, `MAN2rm`, `MAN3rm` |
 
 Each name in the table denotes the corresponding `<name>_Dedup.bam` file. The technical-replicate, Spatial and Temporal count-generation scripts read `outFilesR2/`, `outFilesS/` and `outFilesT/`, respectively. The upstream processing scripts do not write directly to these analysis-specific directories.
 
