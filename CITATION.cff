@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "PhotoSeq analysis code"
+type: software
+authors:
+  - family-names: "Li"
+    given-names: "Weiwei"
+    affiliation: "Shanghai Jiao Tong University"
+  - family-names: "Ding"
+    given-names: "Xianting"
+    affiliation: "Shanghai Jiao Tong University"
+repository-code: "https://github.com/liweiwei199107-eng/PhotoSeq"
+license: "MIT"
