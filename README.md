@@ -15,7 +15,7 @@ The two stages were run on different operating systems. This is intentional and 
 ## Analysis overview
 
 1. Download the GRCm39 primary assembly and GENCODE mouse M37 annotation.
-2. Build the STAR index without renaming mouse chromosomes.
+2. Build the STAR index for the GRCm39 primary assembly and GENCODE mouse M37 annotation.
 3. Trim the established motifs from the raw FASTQ files.
 4. Extract the 12-nt UMI and identify the PhotoSeq ROI barcode.
 5. Align reads uniquely to the mouse genome, assign reads to genes and deduplicate by UMI and gene.
