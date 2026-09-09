@@ -144,24 +144,32 @@ ratio_dat$length_bin <- cut(ratio_dat$transcript_length, c(-Inf, 2000, 3500, 500
                             labels = c("0-2000", "2000-3500", "3500-5000", "5000-7000", ">7000"), right = FALSE)
 ratio_cols <- c("0-2000" = "#F8E4AE", "2000-3500" = "#F2C278", "3500-5000" = "#E99A5B", "5000-7000" = "#D5774F", ">7000" = "#985345")
 ratio_dat$length_bin <- factor(ratio_dat$length_bin, levels = names(ratio_cols))
+# The ratio is plotted on its positive raw scale with a log10 transformation.
+# Thus, ratio = 1 is shown at 10^0; a raw y value of 0 is undefined here.
+ratio_y_breaks <- 10^(-2:4)
+ratio_y_labels <- parse(text = paste0("10^", -2:4))
 ratio_plot <- ggplot(ratio_dat, aes(length_bin, ratio, fill = length_bin)) +
-  geom_boxplot(outlier.shape = 18, outlier.size = 1.25, outlier.colour = "#3E3E3E", colour = "#555555", linewidth = .55, alpha = .9) +
+  geom_boxplot(outlier.shape = 18, outlier.size = 1.25, outlier.colour = "#3E3E3E",
+               colour = "#555555", linewidth = .55, alpha = .9,
+               whisker.linewidth = .55, staple.linewidth = .55, staplewidth = .5) +
   geom_hline(aes(yintercept = 1, linetype = "Ratio = 1"), colour = "#D6272D", linewidth = 1.0) +
   scale_fill_manual(values = ratio_cols, guide = "none") +
   scale_linetype_manual(values = c("Ratio = 1" = "dashed"), name = NULL) +
-  scale_y_log10(limits = c(1e-2, 2e4), breaks = 10^(-2:4), labels = scales::label_math(10^.x)) +
-  labs(title = "PhotoSeq Breast Late vs Visium", x = "Transcript\nLength (nt)", y = "PhotoSeq vs Visium Ratio") +
+  scale_y_log10(limits = c(1e-2, 2e4), breaks = ratio_y_breaks, labels = ratio_y_labels, expand = c(0, 0)) +
+  labs(title = "Transcript length-dependent PhotoSeq-to-Visium expression ratio",
+       x = "Transcript Length (nt)", y = "Mean CPM ratio (PhotoSeq / Visium)") +
   theme_classic(base_size = 12, base_family = "Arial") +
   theme(axis.line = element_line(linewidth = 1.05, colour = "black"), axis.ticks = element_line(linewidth = 1.0, colour = "black"),
-        axis.title = element_text(size = 16), axis.text = element_text(size = 13, colour = "black"),
+        axis.title = element_text(size = 14), axis.text = element_text(size = 12, colour = "black"),
         axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
-        plot.title = element_text(size = 20, hjust = .5, face = "plain"),
+        plot.title = element_text(size = 14, hjust = .5, face = "plain"),
         panel.grid.major.y = element_line(colour = "#E5E5E5", linewidth = .5), panel.grid.minor = element_blank(),
+        panel.border = element_rect(colour = "black", fill = NA, linewidth = 1.05),
         legend.position = c(.91, .95), legend.justification = c(1, 1),
         legend.background = element_rect(fill = "white", colour = "#BDBDBD", linewidth = .8),
-        legend.key.width = unit(1.2, "cm"), legend.text = element_text(size = 13),
+        legend.key.width = unit(1.2, "cm"), legend.text = element_text(size = 11),
         plot.margin = margin(8, 12, 8, 10))
-save_plot(ratio_plot, file.path(qc2_dir, "Breast_Late_PhotoSeq_vs_Visium_ratio_by_transcript_length"), 190, 160)
+save_plot(ratio_plot, file.path(qc2_dir, "Breast_Late_PhotoSeq_vs_Visium_ratio_by_transcript_length"), 190, 140)
 write.csv(ratio_dat, file.path(qc2_dir, "Breast_Late_ratio_source_data.csv"), row.names = FALSE)
 
 # 03: all-gene expression density; no batch correction.
@@ -212,7 +220,7 @@ write.csv(data.frame(
   stringsAsFactors = FALSE
 ), file.path(qc3_dir, "Breast_Late_density_summary.csv"), row.names = FALSE)
 
-# 04: complete numeric Pearson matrix after integrated ComBat_seq.
+# 04: complete numeric Pearson R-squared matrix after integrated ComBat_seq.
 qc4_dir <- file.path(out_root, "04.integrated_Pearson_correlation")
 dir.create(qc4_dir, recursive = TRUE, showWarnings = FALSE)
 group_order <- c("Breast_early", "Breast_tumor", "Breast_late", "Breast_normal_adjacent", "Breast_normal", "Lung_metastasis", "Lung_normal_adjacent", "Lung_normal")
@@ -220,24 +228,25 @@ group_labels <- c(Breast_early = "Breast\nearly", Breast_tumor = "Breast mid\n(t
 group_mean <- sapply(group_order, function(g) rowMeans(integrated_vst[, all_group$sample_id[all_group$group == g], drop = FALSE]))
 rownames(group_mean) <- rownames(integrated_vst)
 pearson <- cor(group_mean, method = "pearson", use = "pairwise.complete.obs")
-write.csv(pearson, file.path(qc4_dir, "PhotoSeq_8group_Pearson_matrix.csv"))
+pearson_r2 <- pearson^2
+write.csv(pearson_r2, file.path(qc4_dir, "PhotoSeq_8group_Pearson_R2_matrix.csv"))
 cor_dat <- expand.grid(row_group = group_order, col_group = group_order, stringsAsFactors = FALSE)
-cor_dat$R <- as.vector(pearson[cbind(match(cor_dat$row_group, group_order), match(cor_dat$col_group, group_order))])
+cor_dat$R2 <- as.vector(pearson_r2[cbind(match(cor_dat$row_group, group_order), match(cor_dat$col_group, group_order))])
 cor_dat$row_group <- factor(cor_dat$row_group, levels = group_order); cor_dat$col_group <- factor(cor_dat$col_group, levels = group_order)
 cor_dat$row_i <- as.integer(cor_dat$row_group); cor_dat$col_i <- as.integer(cor_dat$col_group)
-cor_dat$number_colour <- ifelse(cor_dat$R >= .72, "white", "black")
-cor_plot <- ggplot(cor_dat, aes(col_group, row_group, fill = R)) + geom_tile(colour = "white", linewidth = .55) +
-  geom_text(aes(label = ifelse(R == 1, "1", sprintf("%.3f", R)), colour = number_colour), size = 3.1, show.legend = FALSE) +
-  scale_colour_identity() + scale_fill_gradientn(colours = c("#F2F0FF", "#B7A9EE", "#6154E5", "#0A00E8"), limits = c(0, 1), name = "Pearson r") +
+cor_dat$number_colour <- ifelse(cor_dat$R2 >= .72, "white", "black")
+cor_plot <- ggplot(cor_dat, aes(col_group, row_group, fill = R2)) + geom_tile(colour = "white", linewidth = .55) +
+  geom_text(aes(label = ifelse(R2 == 1, "1", sprintf("%.3f", R2)), colour = number_colour), size = 3.1, show.legend = FALSE) +
+  scale_colour_identity() + scale_fill_gradientn(colours = c("#F2F0FF", "#B7A9EE", "#6154E5", "#0A00E8"), limits = c(0, 1), name = expression(Pearson~R^2)) +
   scale_x_discrete(labels = function(x) unname(group_labels[x])) + scale_y_discrete(labels = function(x) unname(group_labels[x])) +
-  labs(title = "Pearson correlation", x = NULL, y = NULL) + coord_fixed() + theme_minimal(base_size = 10) +
+  labs(title = expression(Pearson~R^2), x = NULL, y = NULL) + coord_fixed() + theme_minimal(base_size = 10) +
   theme(panel.grid = element_blank(), axis.text.x = element_text(angle = 45, hjust = 1, size = 10), axis.text.y = element_text(size = 10),
         plot.title = element_text(hjust = .5, face = "plain", size = 20),
         legend.position = "left", legend.justification = "center", legend.margin = margin(r = 6),
         legend.title = element_text(size = 12), legend.text = element_text(size = 10),
         plot.margin = margin(8, 8, 8, 12))
-save_plot(cor_plot, file.path(qc4_dir, "PhotoSeq_8group_Pearson_correlation_full_numeric"), 205, 180)
-write.csv(cor_dat, file.path(qc4_dir, "PhotoSeq_8group_Pearson_plot_data.csv"), row.names = FALSE)
+save_plot(cor_plot, file.path(qc4_dir, "PhotoSeq_8group_Pearson_R2_full_numeric"), 205, 180)
+write.csv(cor_dat, file.path(qc4_dir, "PhotoSeq_8group_Pearson_R2_plot_data.csv"), row.names = FALSE)
 
 # 05: DEG union, requiring padj < .01 and absolute log2FC > 1.5.
 qc5_dir <- file.path(out_root, "05.DEG_zscore_heatmap"); dir.create(qc5_dir, recursive = TRUE, showWarnings = FALSE)
