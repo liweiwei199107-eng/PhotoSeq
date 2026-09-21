@@ -18,7 +18,7 @@ Rscript scripts\prepare_immune_signature.R
 
 ## Benchmark tables
 
-The three files under `benchmark/` are processed comparison inputs used for PhotoSeq-versus-Visium quality-control panels. Script 17 recalculates the PhotoSeq side from the supplied PhotoSeq counts and reads the Visium-side quantities from these compact tables. Processing of the external Visium raw sequencing data is outside this workflow.
+The three files under `benchmark/` are processed comparison inputs used for PhotoSeq-versus-Visium quality-control panels. The benchmarking analysis in script 17 uses frozen reference tables derived from publicly available Visium data for GEO samples `GSM8210411` and `GSM8210412`. Script 17 recalculates the PhotoSeq side from the supplied PhotoSeq counts and reads the Visium-side quantities from these compact tables. The corresponding Visium HDF5 files are not redistributed in this repository; preprocessing of these public reference data is described in the manuscript Methods.
 
 ## UV condition optimization
 

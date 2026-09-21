@@ -4,6 +4,10 @@ output <- file.path(ORIGINAL_DIR, "04_Estimate_Spatial")
 if (!dir.exists(output)) {dir.create(output, recursive = TRUE)}
 setwd(ORIGINAL_DIR)
 
+IOBR_cache <- file.path(output, "IOBR_cache")
+dir.create(IOBR_cache, recursive = TRUE, showWarnings = FALSE)
+options(IOBR.cache_dir = IOBR_cache)
+
 library(utils)
 library(tidyverse)
 library(ggplot2)
@@ -16,8 +20,9 @@ group<-read.csv('./00_prepared_data/01.Spatial_group.csv')
 
 data <- data.frame(dat_norm)
 data$ID <- rownames(data)
+sample_cols <- setdiff(colnames(data), "ID")
 conv <- homologene(data$ID,
-                   inTax = 10116, #rat
+                   inTax = 10090, # mouse
                    outTax = 9606)  # human
 
 probe2symbol <- conv[,c(1,2)]
@@ -28,7 +33,7 @@ dat<-dat %>%
   inner_join(probe2symbol,by='ID')%>% 
   dplyr::select(-ID)%>%     
   dplyr::select(symbol,everything())%>%     
-  mutate(rowMean=rowMeans(.[grep('GSM.',names(.))]))%>%    
+  mutate(rowMean=rowMeans(dplyr::select(., dplyr::all_of(sample_cols))))%>%    
   dplyr::arrange(desc(rowMean))%>%       
   distinct(symbol,.keep_all = T)%>%      
   dplyr::select(-rowMean)%>%     

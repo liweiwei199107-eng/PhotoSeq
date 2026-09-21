@@ -27,16 +27,58 @@ The upstream workflow was run on Linux with the following principal software ver
 - STAR v2.7.11b
 - featureCounts v2.0.1 (distributed with Subread v2.0.1)
 - UMI-tools v1.1.1
+- SAMtools v1.12
+- Python v3.7.5
 
-The analysis environment used Python 3.7.5.
+### Install Miniconda
+
+If `conda --version` already returns an installed Conda version, skip this subsection. Otherwise, install Miniconda before creating the PhotoSeq environment. The following commands install Miniconda on 64-bit x86 Linux:
 
 ```bash
-conda create --name PhotoSeqEnv python=3.7.5 pandas matplotlib seaborn pytables biopython scikit-image
-conda activate PhotoSeqEnv
-
-conda install -c bioconda pysam umi_tools=1.1.1 subread=2.0.1 samtools=1.12
-conda install -c biocore scikit-bio
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
+
+During installation, follow the prompts and allow the installer to initialize Conda. Close and reopen the terminal after installation, then confirm that Conda is available:
+
+```bash
+conda --version
+```
+
+If Conda is installed but `conda activate` is not available in the Bash shell, initialize it once and then reopen the terminal:
+
+```bash
+conda init bash
+```
+
+For other operating systems or processor architectures, use the appropriate installer from the [official Miniconda documentation](https://docs.conda.io/projects/miniconda/en/latest/).
+
+### Create and activate the PhotoSeq environment
+
+Create the environment once from the repository root using the supplied `environment.yml` file:
+
+```bash
+cd 01_raw_data_processing
+conda env create -f environment.yml
+conda activate PhotoSeqEnv
+```
+
+Verify the principal environment components:
+
+```bash
+python --version
+umi_tools --version
+samtools --version
+featureCounts -v
+```
+
+At the beginning of each new terminal session, activate the existing environment before running the upstream scripts:
+
+```bash
+conda activate PhotoSeqEnv
+```
+
+The environment only needs to be created once. To leave it after completing the analysis, run `conda deactivate`.
 
 Install STAR v2.7.11b separately. The official source archive can be installed as follows:
 
@@ -71,7 +113,7 @@ PhotoSeq_raw_processing/
 ├── README.md
 ├── environment.yml
 ├── raw_fastq/
-│   └── <sample>_R1.fastq.gz
+│   └── <sample>_R1.fq.gz
 ├── inFiles/
 │   └── <motif-trimmed sample>_R1.fastq.gz
 ├── outFiles/
@@ -100,7 +142,9 @@ PhotoSeq_raw_processing/
     └── generate_photoseq_temporal_counts.py
 ```
 
-The scripts use the FASTQ naming pattern and sample identifiers described below.
+Raw read files use the `*_R1.fq.gz` naming pattern. Motif trimming shortens
+both the nucleotide sequence and its matching quality string at the same
+position; the resulting files end in `rm_R1.fastq.gz`.
 
 ## 5. PhotoSeq barcodes
 
@@ -118,7 +162,7 @@ In the Spatial dataset, barcode1 identifies the tumour ROI, barcode2 identifies 
 
 ## 6. Run order
 
-Run motif trimming in the directory containing the raw FASTQ files, then place the resulting FASTQ files in `inFiles/`. Run all subsequent scripts from the project root.
+Run motif trimming in the directory containing the raw `.fq.gz` files, then place the resulting files in `inFiles/`. Run all subsequent scripts from the project root.
 
 All samples are processed together through barcode extraction, alignment, gene assignment and UMI deduplication. These steps use the common `outFiles/` directory. Only after deduplication are the required `*_Dedup.bam` files copied into the three analysis-specific directories used to generate count matrices.
 

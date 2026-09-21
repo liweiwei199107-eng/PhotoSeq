@@ -239,7 +239,7 @@ cor_plot <- ggplot(cor_dat, aes(col_group, row_group, fill = R2)) + geom_tile(co
   geom_text(aes(label = ifelse(R2 == 1, "1", sprintf("%.3f", R2)), colour = number_colour), size = 3.1, show.legend = FALSE) +
   scale_colour_identity() + scale_fill_gradientn(colours = c("#F2F0FF", "#B7A9EE", "#6154E5", "#0A00E8"), limits = c(0, 1), name = expression(Pearson~R^2)) +
   scale_x_discrete(labels = function(x) unname(group_labels[x])) + scale_y_discrete(labels = function(x) unname(group_labels[x])) +
-  labs(title = expression(Pearson~R^2), x = NULL, y = NULL) + coord_fixed() + theme_minimal(base_size = 10) +
+  labs(title = "Pearson correlation", x = NULL, y = NULL) + coord_fixed() + theme_minimal(base_size = 10) +
   theme(panel.grid = element_blank(), axis.text.x = element_text(angle = 45, hjust = 1, size = 10), axis.text.y = element_text(size = 10),
         plot.title = element_text(hjust = .5, face = "plain", size = 20),
         legend.position = "left", legend.justification = "center", legend.margin = margin(r = 6),

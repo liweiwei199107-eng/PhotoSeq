@@ -198,6 +198,7 @@ p1 <- ggplot(all_result, aes(x = neg_log10_pvalue, y = Description, fill = Categ
   scale_x_continuous(expand = c(0, 0)) +
   scale_fill_manual(values = c('#037498', "#FDBF6F", '#db534c')) +
   scale_y_discrete(expand = c(0.05, 0)) +
+  labs(x = expression(-log[10]("adjusted " * italic(P) * " value"))) +
   ggtitle("KEGG Enrichment")
 
 all_result$Category <- factor(
@@ -668,6 +669,5 @@ for (i in 1:nrow(gsva_mat)) {
 
 
 message("16_integrated_pathway_analysis completed.")
-
 
 

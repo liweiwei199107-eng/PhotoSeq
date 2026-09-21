@@ -4,14 +4,14 @@
 """
 trim_photoseq_fastq_at_motifs.py
 
-Batch-process all PhotoSeq *_R1.fastq.gz files in the current directory.
+Batch-process all PhotoSeq *_R1.fq.gz files in the current directory.
 
 Example:
-    sample1_R1.fastq.gz -> sample1_rm_R1.fastq.gz
-    sample2_R1.fastq.gz -> sample2_rm_R1.fastq.gz
+    EL1_R1.fq.gz -> EL1rm_R1.fastq.gz
+    TAN1_R1.fq.gz -> TAN1rm_R1.fastq.gz
 
-Only the FASTQ sequence line is modified.
-Header, + line, and quality line are kept unchanged.
+The sequence and its corresponding quality string are trimmed at the same
+position. The header and + line are retained unchanged.
 
 Trim rule:
     Find the earliest occurrence of either:
@@ -24,7 +24,7 @@ import glob
 import gzip
 import os
 
-INPUT_PATTERN = "*_R1.fastq.gz"
+INPUT_PATTERN = "*_R1.fq.gz"
 OUTPUT_SUFFIX = "rm_R1.fastq.gz"
 
 TRIM_MOTIFS = [
@@ -37,7 +37,7 @@ PROGRESS_EVERY = 1000000
 
 
 def make_output_name(input_path):
-    suffix = "_R1.fastq.gz"
+    suffix = "_R1.fq.gz"
     if not input_path.endswith(suffix):
         raise ValueError("Unexpected input filename: %s" % input_path)
     prefix = input_path[:-len(suffix)]
@@ -52,10 +52,10 @@ def trim_sequence(seq):
             cut_positions.append((pos, motif))
 
     if not cut_positions:
-        return seq, None
+        return seq, None, len(seq)
 
     cut_pos, motif = min(cut_positions, key=lambda x: x[0])
-    return seq[:cut_pos], motif
+    return seq[:cut_pos], motif, cut_pos
 
 
 def process_one_file(input_path, output_path):
@@ -99,12 +99,19 @@ def process_one_file(input_path, output_path):
                 )
 
             seq = seq_line.rstrip("\r\n")
-            new_seq, matched_motif = trim_sequence(seq)
+            quality = qual.rstrip("\r\n")
+            if len(seq) != len(quality):
+                raise ValueError(
+                    "Sequence and quality lengths differ in %s near record %d"
+                    % (input_path, total + 1)
+                )
+            new_seq, matched_motif, cut_pos = trim_sequence(seq)
+            new_quality = quality[:cut_pos]
 
             out.write(header)
             out.write(new_seq + "\n")
             out.write(plus)
-            out.write(qual)
+            out.write(new_quality + "\n")
 
             total += 1
 

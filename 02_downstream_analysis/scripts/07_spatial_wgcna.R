@@ -104,8 +104,6 @@ num <- 0.85 # R-squared threshold; typical choices are 0.8, 0.85 or 0.9
 sft <- pickSoftThreshold(mat1, RsquaredCut = num, powerVector = powers, verbose = 5)
 
 sft$powerEstimate
-#save(sft,file = "./03_WGCNA/powerEstimate.RData")
-#load('./03_WGCNA/powerEstimate.RData')
 
 
 
@@ -164,7 +162,7 @@ text(sft$fitIndices[, 1], sft$fitIndices[, 5], labels = powers, cex = cex1, col 
 dev.off()
 
 datExpr <- mat1
-powers <- 8
+powers <- 6
 cor <- WGCNA::cor
 net <- blockwiseModules(
   datExpr,
@@ -182,10 +180,6 @@ net <- blockwiseModules(
   nThreads = 4,
   verbose = 3
 )
-#save(net,file = "./03_WGCNA/net_200.RData")
-#load('./02_WGCNA/net_200.RData')
-
-
 cor <- stats::cor
 table(net$colors)
 
