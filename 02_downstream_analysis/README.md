@@ -22,7 +22,7 @@ The downstream analysis was run on Windows 11 with R 4.6.0 and Python 3.12.14. U
 In RStudio, set the working directory to `02_downstream_analysis/`. From PowerShell or Command Prompt:
 
 ```powershell
-cd PhotoSeq_GitHub_submission\02_downstream_analysis
+cd 02_downstream_analysis
 R -e "renv::load(); source('scripts/00_prepare_analysis_data.R')"
 ```
 
